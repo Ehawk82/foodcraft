@@ -11,7 +11,38 @@ body {
 }
 /* class */
 .userFrame {
-   background:grey;
+   position:absolute;
+   height:100%;
+   width:100%;
+}
+.dvButtons {
+    background: lightgrey;
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+}
+.theBtns {
+    padding: 12px 0;
+    width: 6.25%;
+    font-size: 120%;
+    border: none;
+    float: left;
+}
+    .theBtns:hover {
+        background: #8effff;
+    }
+    .theBtns:active {
+        background: #80e9e9;
+    }
+.output {
+    position: relative;
+    padding: 12px 0;
+    width:50%;
+    display:inline-block;
+    font-size: 120%;
+    overflow:hidden;
+    clear:both;
+    background: lightgrey;
 }
 /* ID */
 

@@ -75,11 +75,54 @@
             //console.log("preloader");
         },
         init: () => {
-            var userFrame = myUI.createEle("div");
+            var userFrame = myUI.createEle("div"),
+                dvButtons = myUI.createEle("div"),
+                homeBtn = myUI.createEle("button"),
+                settBtn = myUI.createEle("button"),
+                fridgeBtn = myUI.createEle("button"),
+                ideaBtn = myUI.createEle("button"),
+                redBookBtn = myUI.createEle("button"),
+                blueBookBtn = myUI.createEle("button"),
+                greenBookBtn = myUI.createEle("button"),
+                cartBtn = myUI.createEle("button"),
+                output = myUI.createEle("div");
 
-            userFrame.innerHTML = "works";
+            output.innerHTML = "...";
+            cartBtn.innerHTML = "🛒";
+            greenBookBtn.innerHTML = "📗";
+            blueBookBtn.innerHTML = "📘";
+            redBookBtn.innerHTML = "📕";
+            ideaBtn.innerHTML = "💡";
+            fridgeBtn.innerHTML = "🍽";
+            settBtn.innerHTML = "⚙";
+            homeBtn.innerHTML = "🏠";
+
+            output.className = "output";
+
+            cartBtn.className = "theBtns";
+            greenBookBtn.className = "theBtns";
+            blueBookBtn.className = "theBtns";
+            redBookBtn.className = "theBtns";
+            ideaBtn.className = "theBtns";
+            fridgeBtn.className = "theBtns";
+            settBtn.className = "theBtns";
+            homeBtn.className = "theBtns";
+
+            dvButtons.className = "dvButtons";
+
             userFrame.className = "userFrame";
 
+
+            dvButtons.appendChild(homeBtn);
+            dvButtons.appendChild(settBtn);
+            dvButtons.appendChild(fridgeBtn);
+            dvButtons.appendChild(ideaBtn);
+            dvButtons.appendChild(redBookBtn);
+            dvButtons.appendChild(blueBookBtn);
+            dvButtons.appendChild(greenBookBtn);
+            dvButtons.appendChild(cartBtn);
+            dvButtons.appendChild(output);
+            userFrame.appendChild(dvButtons);
             dvContain.appendChild(userFrame);
         }
     };
